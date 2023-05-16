@@ -9,7 +9,7 @@ function App() {
   const [username, setUsername] = useState('')
 
   function connect() {
-    socket.current = new WebSocket('ws://localhost:5000')
+    socket.current = new WebSocket('https://easy-chat-backend.vercel.app/')
 
     socket.current.onopen = () => {
       setConnected(true)
